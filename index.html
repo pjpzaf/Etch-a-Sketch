@@ -8,15 +8,19 @@
     </head>
     <body>
         <!-- parent node of 16x16 square divs -->
-        <div id="main-container">
-            <div id = "options-container">
-            <h3 id="slider-indicator">16 x 16</h3>
-            <input type="range" min="16" max="100" value="16" class="slider" id="myRange">
-            <button id="button-draw">Draw</button>
-            <button id="button-erase">Erase</button>
-            <button id="button-clear">Clear</button>
-            </div>
+        <h1 id="main-header">Etch-a-Sketch</h1>
+     
             <div id="grid-container"></div> 
-        </div>
+            <div id="slider-container">
+                <h3 id="slider-indicator">16 x 16</h3>
+                <input type="range" min="16" max="100" value="16" class="slider" id="myRange">
+                </div>
+            <div id = "options-container">
+                <button id="button-draw">Draw</button>
+                <button id="rainbow-draw">Rainbow </button>
+                <button id="button-erase">Erase</button>
+                <button id="button-clear">Clear</button>
+                </div>
+
     </body>
 </html>

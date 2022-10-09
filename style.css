@@ -3,13 +3,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Roboto';
+    row-gap: 20px;
 }
 
-#main-container {
+#main-header {
+    align-self: center;
+}
+
+#grid-container {
+    align-self: center;
+}
+
+#slider-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 100px;
+    flex-direction: column;
+    align-self: center;
+    max-width: 200px;
 }
 
 #slider-indicator {
@@ -22,8 +32,8 @@ body {
 
 #options-container{
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    column-gap: 20px;
 }
 
 #slider-indicator {
@@ -34,29 +44,11 @@ body {
     accent-color: rgb(20, 20, 19);
 }
 
-#button-draw {
+#button-draw, #button-erase, #button-clear, #rainbow-draw {
     margin: 10px;
     font-size: large;
-    font-family: fantasy;
     font-weight: bolder;
     border-radius: 12px;
     background-color: rgb(245, 245, 220);
 }
 
-#button-erase {
-    margin: 10px;
-    font-size: large;
-    font-family: fantasy;
-    font-weight: bolder;
-    border-radius: 12px;
-    background-color: rgb(245, 245, 220);
-}
-
-#button-clear {
-    margin: 10px;
-    font-size: large;
-    font-family: fantasy;
-    font-weight: bolder;
-    border-radius: 12px;
-    background-color: rgb(245, 245, 220);
-}
