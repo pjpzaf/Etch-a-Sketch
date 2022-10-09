@@ -7,6 +7,7 @@ let boxSize;
 let divSelect;
 let defaultGridDimension;
 let sliderIndicator;
+
 // main function to create square divs and color them
 let makeSquareDiv = function moveSlider(gridDimension){
     gridDimension = sliderSelect.value;
@@ -18,7 +19,8 @@ let makeSquareDiv = function moveSlider(gridDimension){
     grid.style.gridTemplateRows = `repeat(${gridDimension}, ${boxSize}px)`;
     grid.style.gridTemplateColumns = `repeat(${gridDimension}, ${boxSize}px)`;
     grid.style.border = "3px solid black" 
-    
+
+
     //To create the square divs to be inserted on the grid
     for (let i=0;i<(gridDimension**2);i++) {
         div = document.createElement('div');
@@ -57,4 +59,16 @@ sliderSelect.addEventListener("input", function (e) {
     eraseSketch();
     makeSquareDiv(gridDimension);});
 
+//for clear button
+let buttonClear = document.getElementById("button-clear");
+    buttonClear.addEventListener("click",function (e) {
+        eraseSketch();
+        makeSquareDiv(gridDimension);
+    });
 
+// let buttonDraw = document.getElementById("button-draw");
+//     buttonDraw.addEventListener("click",function (e) {
+//         document.getElementById("button-draw").className = "hold";
+//         eraseSketch();
+//         makeSquareDiv(gridDimension);
+//     });
